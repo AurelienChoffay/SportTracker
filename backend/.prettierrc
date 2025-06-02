@@ -1,0 +1,19 @@
+{
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "endOfLine": "auto"
+}
+'@ | Out-File -FilePath .prettierrc -Encoding UTF8
+
+# .prettierignore
+@'
+node_modules
+dist
+coverage
+.env
+*.log
