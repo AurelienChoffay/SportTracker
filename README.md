@@ -34,10 +34,9 @@ Export de données : CSV, GPX pour les parcours
 **Pour la musculation**
 
 1. **wger Workout Manager API** (https://wger.de/api/v2/)
-
-  * Base de données d'exercices complète
-  * Images et descriptions
-   * API REST gratuite et opensource
+     * Base de données d'exercices complète
+     * Images et descriptions
+     * API REST gratuite et opensource
 
 2. **ExRx.net** : base de données anatomique (pas d'API mais scraping possible avec autorisation)
 3. **OpenPowerlifting** : données de powerlifting
