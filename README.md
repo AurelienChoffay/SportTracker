@@ -2,25 +2,24 @@
 
 **Module Musculation**
 
-Bibliothèque d'exercices : exercices par groupe musculaire, avec descriptions, vidéos/animations
-Planification d'entraînement : création de programmes personnalisés avec séries, répétitions, temps de repos
-Suivi de progression : historique des charges, graphiques d'évolution
-Timer intégré : pour les temps de repos entre séries
-Calcul du 1RM (répétition maximale) et suggestions de charges
+ * Bibliothèque d'exercices : exercices par groupe musculaire, avec descriptions, vidéos/animations
+ * Planification d'entraînement : création de programmes personnalisés avec séries, répétitions, temps de repos
+ * Suivi de progression : historique des charges, graphiques d'évolution
+ * Timer intégré : pour les temps de repos entre séries
+ * Calcul du 1RM (répétition maximale) et suggestions de charges
 
 
 **Module Cardio**
 
-Types d'activités : course à pied, vélo, natation, rameur
-Planification détaillée :
+ * Types d'activités : course à pied, vélo, natation, rameur
+ * Planification détaillée :
+    * Échauffement (durée, allure)
+    * Corps de séance (continu, fractionné, fartlek)
+    * Récupération
 
-Échauffement (durée, allure)
-Corps de séance (continu, fractionné, fartlek)
-Récupération
-
-Intégration GPS : suivi en temps réel, carte du parcours
-Métriques : distance, vitesse, dénivelé, calories, zones cardiaques
-Programmes d'entraînement : 5K, 10K, marathon, etc.
+ * Intégration GPS : suivi en temps réel, carte du parcours
+ * Métriques : distance, vitesse, dénivelé, calories, zones cardiaques
+ * Programmes d'entraînement : 5K, 10K, marathon, etc.
 
 
 **Fonctionnalités transverses**
