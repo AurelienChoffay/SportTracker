@@ -1,5 +1,6 @@
-🏋️ Fonctionnalités principales
-Module Musculation
+🏋️ **Fonctionnalités principales**
+
+**Module Musculation**
 
 Bibliothèque d'exercices : exercices par groupe musculaire, avec descriptions, vidéos/animations
 Planification d'entraînement : création de programmes personnalisés avec séries, répétitions, temps de repos
@@ -7,7 +8,8 @@ Suivi de progression : historique des charges, graphiques d'évolution
 Timer intégré : pour les temps de repos entre séries
 Calcul du 1RM (répétition maximale) et suggestions de charges
 
-Module Cardio
+
+**Module Cardio**
 
 Types d'activités : course à pied, vélo, natation, rameur
 Planification détaillée :
@@ -16,12 +18,12 @@ Planification détaillée :
 Corps de séance (continu, fractionné, fartlek)
 Récupération
 
-
 Intégration GPS : suivi en temps réel, carte du parcours
 Métriques : distance, vitesse, dénivelé, calories, zones cardiaques
 Programmes d'entraînement : 5K, 10K, marathon, etc.
 
-Fonctionnalités transverses
+
+**Fonctionnalités transverses**
 
 Calendrier d'entraînement : vue globale des séances planifiées
 Statistiques et analyses : volume hebdomadaire, répartition muscu/cardio
@@ -29,70 +31,73 @@ Système de rappels : notifications pour les entraînements
 Mode hors-ligne : synchronisation quand connexion disponible
 Export de données : CSV, GPX pour les parcours
 
-📊 Bases de données et API opensource
-Pour la musculation
+📊 **Bases de données et API opensource**
+**Pour la musculation**
 
-wger Workout Manager API (https://wger.de/api/v2/)
+1. **wger Workout Manager API** (https://wger.de/api/v2/)
 
-Base de données d'exercices complète
-Images et descriptions
-API REST gratuite et opensource
+  * Base de données d'exercices complète
+  * Images et descriptions
+   * API REST gratuite et opensource
+
+2. **ExRx.net** : base de données anatomique (pas d'API mais scraping possible avec autorisation)
+3. **OpenPowerlifting** : données de powerlifting
+
+**Pour le cardio**
+
+1. OpenStreetMap API : cartes et calcul d'itinéraires
+2. OpenWeatherMap API : conditions météo pour planifier
+3. Strava API (freemium) : segments et comparaisons
 
 
-ExRx.net : base de données anatomique (pas d'API mais scraping possible avec autorisation)
-OpenPowerlifting : données de powerlifting
+💡 **Fonctionnalités avancées suggérées**
+**Intelligence d'entraînement**
 
-Pour le cardio
+  * Auto-régulation : ajustement des charges selon la forme du jour (RPE)
+  * Détection de surmenage : alertes basées sur la charge d'entraînement
+  * Suggestions d'exercices : alternatives en cas d'équipement manquant
+  * Périodisation automatique : cycles de progression
 
-OpenStreetMap API : cartes et calcul d'itinéraires
-OpenWeatherMap API : conditions météo pour planifier
-Strava API (freemium) : segments et comparaisons
+**Social et motivation**
 
-💡 Fonctionnalités avancées suggérées
-Intelligence d'entraînement
+  * Défis communautaires : challenges mensuels
+  * Partage de programmes : bibliothèque communautaire
+  * Système de badges : gamification des objectifs
 
-Auto-régulation : ajustement des charges selon la forme du jour (RPE)
-Détection de surmenage : alertes basées sur la charge d'entraînement
-Suggestions d'exercices : alternatives en cas d'équipement manquant
-Périodisation automatique : cycles de progression
+**Santé et récupération**
 
-Social et motivation
+  * Suivi du sommeil : intégration avec wearables
+  * Journal de sensations : fatigue, douleurs, moral
+  * Rappels d'hydratation : pendant l'entraînement
+  * Stretching/mobilité : routines intégrées
 
-Défis communautaires : challenges mensuels
-Partage de programmes : bibliothèque communautaire
-Système de badges : gamification des objectifs
 
-Santé et récupération
+🛠️ **Stack technique opensource suggérée**
+**Frontend mobile**
 
-Suivi du sommeil : intégration avec wearables
-Journal de sensations : fatigue, douleurs, moral
-Rappels d'hydratation : pendant l'entraînement
-Stretching/mobilité : routines intégrées
+  * React Native : cross-platform
+  * Redux/MobX : gestion d'état
+  * React Native Maps : intégration GPS
 
-🛠️ Stack technique opensource suggérée
-Frontend mobile
 
-React Native ou Flutter : cross-platform
-Redux/MobX : gestion d'état
-React Native Maps : intégration GPS
+**Backend**
 
-Backend
+  * Node.js avec Express
+  * PostgreSQL : base de données principale
+  * Redis : cache et sessions
+  * Docker : containerisation
 
-Node.js avec Express ou NestJS
-PostgreSQL : base de données principale
-Redis : cache et sessions
-Docker : containerisation
 
-Services
+**Services**
 
-Supabase : alternative opensource à Firebase
-MinIO : stockage d'objets (vidéos, images)
-n8n : automatisation des workflows
+  * Supabase : alternative opensource à Firebase
+  * MinIO : stockage d'objets (vidéos, images)
+  * n8n : automatisation des workflows
 
 📋 Modèle de données principal
-javascript// Exemple de structure pour un entraînement
+
 {
-  "workout": {
+"workout": {
     "id": "uuid",
     "type": "strength|cardio|mixed",
     "name": "Pectoraux & Course fractionée",
@@ -102,7 +107,7 @@ javascript// Exemple de structure pour un entraînement
         "type": "strength",
         "exerciseId": "bench-press",
         "sets": [
-          {"reps": 12, "weight": 60, "rest": 90},
+        {"reps": 12, "weight": 60, "rest": 90},
           {"reps": 10, "weight": 70, "rest": 90}
         ]
       },
